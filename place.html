@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Places to Visit</title>
+    <style>
+       body {
+            background-color: #fff5f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(to right, #ff0080, #ff66b2);
+            padding: 15px 30px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(255, 20, 147, 0.4);
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-container a:hover {
+            background: white;
+            color: #ff0080;
+            transform: scale(1.1);
+        }
+
+        .container {
+            margin-top: 100px; 
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #8b005d;
+        }
+
+        .image-container {
+            display: inline-block;
+            padding: 15px;
+            border-radius: 20px;
+            background: white;
+            box-shadow: 0px 0px 30px rgba(255, 105, 180, 0.5);
+            position: relative;
+        }
+
+        .image-container img {
+            display: block;
+            border-radius: 10px;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(255, 20, 147, 0.9);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 12px;
+            font-size: 16px;
+            white-space: nowrap;
+            display: none;
+            box-shadow: 0px 5px 15px rgba(255, 20, 147, 0.5);
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="container">
+        <h1>Dream Places to Visit</h1>
+        <div class="image-container">
+            <img src="im.jpg" alt="Dream Places to Visit" usemap="#dreamplaces">
+            <div class="tooltip" id="tooltip"></div>
+        </div>
+    </div>
+
+    <map name="dreamplaces">
+        <area shape="poly" coords="33,331,36,323,72,297,71,282,87,274,88,256,105,253,111,231,128,229,135,213,149,215,150,199,176,203,178,187,192,154,195,45,190,32,203,5,216,31,219,132,233,169,259,172,268,137,300,121,307,128,325,132,342,145,342,158,325,167,337,182,377,192,387,179,403,221,437,230,394,301,369,352,328,366,256,367,190,373,40,352" href="france.html" data-name="France">
+        <area shape="poly" coords="553,336,555,233,557,119,564,218,566,195,572,180,578,142,579,109,590,110,589,151,601,186,605,194,605,227,617,206,622,196,630,181,642,152,647,110,652,110,656,157,664,145,669,115,673,115,690,151,693,178,713,204,751,207,755,252,749,295,665,368,561,340" href="spain.html" data-name="Spain">
+        <area shape="poly" coords="704,448,705,356,716,340,746,117,779,329,786,303,823,298,849,324,847,345,931,368,919,466,888,508,708,458" href="germany.html" data-name="Germany">
+        <area shape="poly" coords="303,518,303,451,314,454,346,436,346,394,407,359,422,361,421,280,436,280,453,205,462,205,477,271,493,273,495,389,535,349,600,368,601,430,593,445,501,544,334,561,305,528" href="uk.html" data-name="United Kingdom">
+        <area shape="poly" coords="62,662,64,595,90,588,116,593,239,562,260,589,261,670,216,720,182,729,78,659,64,658" href="italy.html" data-name="Italy">
+    </map>
+
+    <script>
+        document.querySelectorAll('area').forEach(area => {
+            area.addEventListener('mouseover', function(event) {
+                const tooltip = document.getElementById('tooltip');
+                tooltip.innerText = this.dataset.name;
+                const coords = this.getAttribute('coords').split(',');
+                const x = parseInt(coords[0]);
+                const y = parseInt(coords[1]);
+                tooltip.style.left = x + 'px';
+                tooltip.style.top = y + 'px';
+                tooltip.style.display = 'block';
+            });
+
+            area.addEventListener('mouseout', function() {
+                document.getElementById('tooltip').style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

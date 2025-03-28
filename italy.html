@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Italy</title>
+    <style>
+        body {
+            background-color: #fff5f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(to right, #ff0080, #ff66b2);
+            padding: 15px 30px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(255, 20, 147, 0.4);
+            position: fixed;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-container a:hover {
+            background: white;
+            color: #ff0080;
+            transform: scale(1.1);
+        }
+
+        .italy-container {
+            position: relative;
+            padding: 20px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0px 10px 30px rgba(255, 20, 147, 0.5);
+            margin-top: 120px;
+            margin-bottom: 30px;
+            max-width: 1000px;
+            text-align: justify;
+            color: #333;
+        }
+
+        .italy-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .image-box {
+            display: block;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 220px;
+            height: 160px;
+            box-shadow: 0px 5px 15px rgba(255, 20, 147, 0.5);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .image-box:hover img {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .italy-container h2, .italy-container h3 {
+            text-align: center;
+            font-size: 34px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .italy-container ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <a href="place.html">BACK</a>
+    </div>
+
+    <div class="italy-container">
+        <h2>Discover Italy</h2>
+        <p>Italy, a country of timeless beauty and rich cultural heritage, offers breathtaking landscapes, historical landmarks, and world-renowned cuisine. From the canals of Venice to the ruins of Rome, every corner of Italy tells a story of its glorious past and vibrant present.</p>
+        
+        <div class="italy-gallery">
+            <a href="colosseum.jpg" class="image-box" title="Colosseum">
+                <img src="colosseum.jpg" alt="Colosseum">
+            </a>
+            <a href="venice.jpg" class="image-box" title="Venice Canals">
+                <img src="venice.jpg" alt="Venice Canals">
+            </a>
+            <a href="florence.jpg" class="image-box" title="Florence Cathedral">
+                <img src="florence.jpg" alt="Florence Cathedral">
+            </a>
+            <a href="amalfi.jpg" class="image-box" title="Amalfi Coast">
+                <img src="amalfi.jpg" alt="Amalfi Coast">
+            </a>
+        </div>
+
+        <h3>Beautiful Sceneries of Italy</h3>
+        <ul>
+            <li>Colosseum – A grand reminder of ancient Rome's glory.</li>
+            <li>Venice Canals – A romantic and unique experience on water.</li>
+            <li>Florence Cathedral – A masterpiece of Renaissance architecture.</li>
+            <li>Amalfi Coast – Stunning coastal cliffs and charming villages.</li>
+        </ul>
+
+        <h3>Why I Want to Visit Italy</h3>
+        <p>Italy's charm lies in its blend of history, art, and gastronomy. I dream of wandering through the ruins of Rome, cruising the Venetian canals, and tasting authentic Italian pasta in a quaint countryside trattoria. The country's passion for art and tradition makes it a must-visit destination.</p>
+
+        <h3>Things I Want to See and Experience</h3>
+        <ul>
+            <li>Explore the Colosseum and imagine the gladiator battles.</li>
+            <li>Take a romantic gondola ride in Venice.</li>
+            <li>Admire the art and architecture of Florence.</li>
+            <li>Relax along the Amalfi Coast and enjoy the Mediterranean beauty.</li>
+            <li>Indulge in authentic Italian pizza and gelato.</li>
+        </ul>
+    </div>
+</body>
+</html>

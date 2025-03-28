@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kind of Movies</title>
+    <script src="https://kit.fontawesome.com/ed27c31baf.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #ffe6f7;
+            color: #ff02b7;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 15px;
+        }
+        .home-container {
+            background-color: #ff02b7;
+            border-radius: 10px;
+            padding: 10px 15px;
+        }
+        .home-container a {
+            color: #ffffff;
+            font-size: 24px;
+        }
+        .main-container {
+            background: #ffb3e6;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 900px;
+            margin: 20px auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        .movie-card {
+            display: flex;
+            flex-direction: column;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+            margin-bottom: 20px;
+        }
+        .movie-content {
+            display: flex;
+            align-items: center;
+        }
+        .movie-poster {
+            width: 200px;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+        .movie-details {
+            padding-left: 20px;
+            flex: 1;
+        }
+        .movie-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .movie-meta {
+            color: #d90097;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .movie-info {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .rating {
+            background-color: #ff02b7;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .tags {
+            margin-top: 10px;
+        }
+        .tag {
+            background: #ffb3e6;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 5px;
+            display: inline-block;
+        }
+        .trailer {
+            margin-top: 15px;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+        #goToTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff02b7;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #goToTop:hover {
+            background-color: #d90097;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="home-container">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <h1><i class="fa-solid fa-film"></i> My Kind of Movies</h1>
+    </div>
+
+    <div class="main-container">
+        <div class="movie-card">
+            <div class="movie-content">
+                <img src="ave.jpg" alt="Avengers: Endgame Poster" class="movie-poster">
+                <div class="movie-details">
+                    <div class="rating">9.3/10</div>
+                    <p class="movie-title">Avengers: Endgame</p>
+                    <p class="movie-meta"><i class="fa-solid fa-film"></i> Action | 2019 | <i class="fa-solid fa-clock"></i> 181 min</p>
+                    <p class="movie-info">
+                        The Avengers take a final stand against Thanos in an epic battle that decides the fate of the universe.
+                    </p>
+                    <p><strong>Director:</strong> Anthony & Joe Russo</p>
+                    <p><strong>Stars:</strong> Robert Downey Jr., Chris Evans, Scarlett Johansson</p>
+                    <p><strong>Release Date:</strong> April 26, 2019</p>
+                    <p><strong>Budget:</strong> $356 million</p>
+                    <div class="tags">
+                        <span class="tag">Action</span>
+                        <span class="tag">Superhero</span>
+                        <span class="tag">Sci-Fi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="trailer">
+                <video controls>
+                    <source src="endgame.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-content">
+                <img src="tok.jpg" alt="Tokyo Drift Poster" class="movie-poster">
+                <div class="movie-details">
+                    <div class="rating">7.0/10</div>
+                    <p class="movie-title">Tokyo Drift</p>
+                    <p class="movie-meta"><i class="fa-solid fa-car"></i> Action | 2006 | <i class="fa-solid fa-clock"></i> 104 min</p>
+                    <p class="movie-info">
+                        A teenager moves to Japan and gets involved in the world of underground drift racing.
+                    </p>
+                    <p><strong>Director:</strong> Justin Lin</p>
+                    <p><strong>Stars:</strong> Lucas Black, Sung Kang, Bow Wow</p>
+                    <p><strong>Release Date:</strong> June 16, 2006</p>
+                    <p><strong>Budget:</strong> $85 million</p>
+                    <div class="tags">
+                        <span class="tag">Action</span>
+                        <span class="tag">Racing</span>
+                        <span class="tag">Thriller</span>
+                    </div>
+                </div>
+            </div>
+            <div class="trailer">
+                <video controls>
+                    <source src="tokyo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <button id="goToTop" onclick="scrollToTop()">Go to Top</button>
+
+    <script>
+        window.onscroll = function() {
+            var button = document.getElementById("goToTop");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
