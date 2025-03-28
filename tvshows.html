@@ -1,0 +1,206 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Kind of TV Shows</title>
+        <script src="https://kit.fontawesome.com/ed27c31baf.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                background-color: #ffe6f7;
+                color: #ff02b7;
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                margin: 0;
+                text-align: center;
+                scroll-behavior: smooth;
+            }
+            .nav-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                padding: 15px;
+            }
+            .home-container {
+                background-color: #ff02b7;
+                border-radius: 10px;
+                padding: 10px 15px;
+            }
+            .home-container a {
+                color: #ffffff;
+                font-size: 24px;
+            }
+            .main-container {
+                background: #ffb3e6;
+                border-radius: 12px;
+                padding: 30px;
+                max-width: 900px;
+                margin: 20px auto;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                text-align: left;
+            }
+            .show-card {
+                display: flex;
+                flex-direction: column;
+                background: #ffffff;
+                border-radius: 12px;
+                padding: 20px;
+                box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+                margin-bottom: 20px;
+            }
+            .show-content {
+                display: flex;
+                align-items: center;
+            }
+            .show-poster {
+                width: 200px;
+                border-radius: 10px;
+                flex-shrink: 0;
+            }
+            .show-details {
+                padding-left: 20px;
+                flex: 1;
+            }
+            .show-title {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .show-meta {
+                color: #d90097;
+                font-size: 14px;
+                margin: 5px 0;
+            }
+            .show-info {
+                font-size: 16px;
+                margin: 10px 0;
+            }
+            .rating {
+                background-color: #ff02b7;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: bold;
+                display: inline-block;
+            }
+            .tags {
+                margin-top: 10px;
+            }
+            .tag {
+                background: #ffb3e6;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-size: 14px;
+                margin-right: 5px;
+                display: inline-block;
+            }
+            .trailer {
+                margin-top: 15px;
+                text-align: center;
+            }
+            video {
+                width: 100%;
+                max-width: 600px;
+                border-radius: 8px;
+            }
+            #goToTop {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #ff02b7;
+                color: #fff;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 8px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            #goToTop:hover {
+                background-color: #d90097;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-container">
+            <div class="home-container">
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            </div>
+            <h1><i class="fa-solid fa-tv"></i> My Kind of TV Shows</h1>
+        </div>
+
+        <div class="main-container">
+            <div class="show-card">
+                <div class="show-content">
+                    <img src="stra.jpg" alt="Stranger Things Poster" class="show-poster">
+                    <div class="show-details">
+                        <div class="rating">8.7/10</div>
+                        <p class="show-title">Stranger Things</p>
+                        <p class="show-meta"><i class="fa-solid fa-tv"></i> Drama | 2016 | <i class="fa-solid fa-clock"></i> 4 Seasons</p>
+                        <p class="show-info">
+                            A group of kids uncover supernatural mysteries in their small town.
+                        </p>
+                        <p><strong>Creators:</strong> The Duffer Brothers</p>
+                        <p><strong>Stars:</strong> Millie Bobby Brown, Finn Wolfhard, David Harbour</p>
+                        <p><strong>First Aired:</strong> July 15, 2016</p>
+                        <div class="tags">
+                            <span class="tag">Mystery</span>
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Thriller</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trailer">
+                    <video controls>
+                        <source src="stranger.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="show-card">
+                <div class="show-content">
+                    <img src="blo.jpg" alt="Bloodhounds Poster" class="show-poster">
+                    <div class="show-details">
+                        <div class="rating">8.2/10</div>
+                        <p class="show-title">Bloodhounds</p>
+                        <p class="show-meta"><i class="fa-solid fa-tv"></i> Action | 2023 | <i class="fa-solid fa-clock"></i> 1 Season</p>
+                        <p class="show-info">
+                            Two boxers take on ruthless loan sharks to fight for justice.
+                        </p>
+                        <p><strong>Director:</strong> Kim Joo-hwan</p>
+                        <p><strong>Stars:</strong> Woo Do-hwan, Lee Sang-yi, Huh Joon-ho</p>
+                        <p><strong>First Aired:</strong> June 9, 2023</p>
+                        <div class="tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Crime</span>
+                            <span class="tag">Thriller</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trailer">
+                    <video controls>
+                        <source src="blood.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <button id="goToTop" onclick="scrollToTop()">Go to Top</button>
+
+        <script>
+            window.onscroll = function() {
+                var button = document.getElementById("goToTop");
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    button.style.display = "block";
+                } else {
+                    button.style.display = "none";
+                }
+            };
+
+            function scrollToTop() {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
+        </script>
+    </body>
+    </html>

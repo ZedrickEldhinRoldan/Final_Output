@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Spain</title>
+    <style>
+        body {
+            background-color: #fff5f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(to right, #ff0080, #ff66b2);
+            padding: 15px 30px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(255, 20, 147, 0.4);
+            position: fixed;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-container a:hover {
+            background: white;
+            color: #ff0080;
+            transform: scale(1.1);
+        }
+
+        .spain-container {
+            position: relative;
+            padding: 20px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0px 10px 30px rgba(255, 20, 147, 0.5);
+            margin-top: 120px;
+            margin-bottom: 30px;
+            max-width: 1000px;
+            text-align: justify;
+            color: #333;
+        }
+
+        .spain-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .image-box {
+            display: block;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 220px;
+            height: 160px;
+            box-shadow: 0px 5px 15px rgba(255, 20, 147, 0.5);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .image-box:hover img {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <a href="place.html">BACK</a>
+    </div>
+
+    <div class="spain-container">
+        <h2>Discover Spain</h2>
+        <p>Spain, a land of vibrant culture, stunning landscapes, and rich history, captivates travelers with its beautiful architecture, lively festivals, and delicious cuisine. From the breathtaking Sagrada Familia in Barcelona to the stunning beaches of Costa del Sol, Spain offers an unforgettable experience.</p>
+        
+        <div class="spain-gallery">
+            <a href="sagrada.jpg" class="image-box" title="Sagrada Familia">
+                <img src="sagrada.jpg" alt="Sagrada Familia">
+            </a>
+            <a href="alhambra.jpg" class="image-box" title="Alhambra">
+                <img src="alhambra.jpg" alt="Alhambra">
+            </a>
+            <a href="parkguell.jpg" class="image-box" title="Park Güell">
+                <img src="parkguell.jpg" alt="Park Güell">
+            </a>
+            <a href="toledo.jpg" class="image-box" title="Toledo">
+                <img src="toledo.jpg" alt="Toledo">
+            </a>
+        </div>
+
+        <h3>Beautiful Sceneries of Spain</h3>
+        <ul>
+            <li>Sagrada Familia – Gaudí’s architectural masterpiece in Barcelona.</li>
+            <li>Alhambra – A stunning Moorish palace in Granada.</li>
+            <li>Park Güell – A colorful and artistic park designed by Gaudí.</li>
+            <li>Toledo – A medieval city with incredible history and views.</li>
+        </ul>
+
+        <h3>Why I Want to Visit Spain</h3>
+        <p>Spain’s rich history, diverse landscapes, and incredible cuisine make it a dream destination. I want to experience the artistic wonders of Gaudí, explore the medieval streets of Toledo, and relax on Spain’s beautiful beaches. The country’s lively atmosphere, from flamenco dancing to tapas culture, is something I truly want to immerse myself in.</p>
+
+        <h3>Things I Want to See and Experience</h3>
+        <ul>
+            <li>Marvel at the stunning architecture of the Sagrada Familia.</li>
+            <li>Explore the beautiful Alhambra and its intricate designs.</li>
+            <li>Wander through the artistic landscapes of Park Güell.</li>
+            <li>Experience traditional Spanish cuisine and tapas.</li>
+            <li>Enjoy a flamenco show and embrace Spain’s rich culture.</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+table,tr,th, td{
+    border:1px solid;
+}
+
+#special{
+    background-color:aqua;
+
+}
+
+tr.cyan{
+    background-color: pink;
+    color: maroon;
+}
+
+tr.blue{
+    background:blue;
+    color: white;
+}
+
+tr.purple{
+    background:purple;
+    color: white;
+}
+
+table{
+    border:2px solid;
+    border-collapse: collapse;
+
+}
+
+tr:hover{
+    background: pink;
+}
